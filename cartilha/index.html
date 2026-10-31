@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golpe do Falso Advogado — Como se Proteger | Juliano Garbuggio</title>
+<meta name="description" content="Cartilha gratuita do Escritório Juliano Garbuggio: como reconhecer perfis falsos de WhatsApp, ligações, áudios e vídeos que imitam o advogado, e o que fazer antes de qualquer pagamento.">
+<meta property="og:title" content="Golpe do Falso Advogado — Como se Proteger">
+<meta property="og:description" content="Cartilha gratuita de prevenção para clientes do Escritório Juliano Garbuggio. O escritório não pede Pix para liberar alvarás ou indenizações.">
+<meta property="og:image" content="https://formulario.julianogarbuggio.adv.br/cartilha/img/og.jpg">
+<meta property="og:type" content="article">
+<link rel="icon" href="img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--verde:#1F6B45;--verde2:#2A7F55;--verde-esc:#0F3D28;--verde-claro:#E6F3EA;--creme:#F7F5F0;--vermelho:#B42318;--verm-claro:#FDECEA;--ambar:#B7791F;--ambar-claro:#FFF4DD;--ok:#1E6B3F;--ok-claro:#E6F4EA;--cinza:#4A4A4A;--borda:#D8DEE2;--ink:#22303A;--bg:#EEF2F0}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;font-size:17px}
+.wrap{max-width:720px;margin:0 auto;padding:12px 12px 40px}
+.sec{background:#fff;border-radius:18px;padding:22px 20px;margin:14px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+h1{font-size:1.9rem;line-height:1.1;margin:0 0 10px;color:var(--verde)}
+h2{font-size:1.35rem;line-height:1.2;margin:0 0 10px;color:var(--verde)}
+h3{font-size:1.08rem;margin:16px 0 6px;color:var(--verde2)}
+p{margin:0 0 10px}ul{margin:0 0 10px;padding-left:22px}li{margin-bottom:6px}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:#fff;background:var(--verde2);padding:4px 10px;border-radius:8px;margin-bottom:10px}
+.tag.red{background:var(--vermelho)}.tag.amber{background:var(--ambar)}.tag.green{background:var(--ok)}
+.box{border-radius:12px;padding:12px 14px;margin:0 0 12px}
+.box.red{background:var(--verm-claro);border-left:6px solid var(--vermelho)}.box.amber{background:var(--ambar-claro);border-left:6px solid var(--ambar)}.box.blue{background:var(--verde-claro);border-left:6px solid var(--verde2)}.box.green{background:var(--ok-claro);border-left:6px solid var(--ok)}
+.box p:last-child,.box ul:last-child{margin-bottom:0}
+.quote{font-weight:800;font-size:1.05rem;line-height:1.25;color:var(--vermelho);text-transform:uppercase;margin:8px 0 12px}.quote.blue{color:var(--verde)}
+.contact{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--borda);border-radius:12px;padding:10px 12px;margin-bottom:8px;text-decoration:none;color:inherit}
+.contact .ic{width:40px;height:40px;border-radius:50%;background:var(--verde);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;flex:none}
+.contact .lbl{font-size:.72rem;color:#6b7a80;text-transform:uppercase;letter-spacing:.4px}.contact .val{font-size:1.3rem;font-weight:800;color:var(--verde);line-height:1.1;word-break:break-all}.contact .val.small{font-size:1.05rem}.contact .sub{font-size:.8rem;color:var(--cinza);margin-top:2px}
+.chat{background:#EAE4D8;border-radius:14px;padding:12px;margin:8px 0 14px;position:relative}
+.chat .hdr{font-size:.72rem;color:#6b6456;text-align:center;margin-bottom:8px;font-weight:700;text-transform:uppercase}
+.msg{background:#fff;border-radius:10px;padding:8px 12px;font-size:.95rem;margin-bottom:8px;max-width:90%;box-shadow:0 1px 2px rgba(0,0,0,.08)}.msg.me{background:#D9FDD3;margin-left:auto}.msg .t{display:block;font-size:.7rem;color:#8a8a8a;text-align:right;margin-top:2px}
+.fake{position:absolute;right:10px;top:8px;background:var(--vermelho);color:#fff;font-size:.68rem;font-weight:800;padding:3px 8px;border-radius:6px;transform:rotate(6deg)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0 0 12px}.steps li{counter-increment:s;position:relative;padding-left:46px;margin-bottom:10px;min-height:34px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--verde);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}.steps.red li::before{background:var(--vermelho)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:480px){.grid2{grid-template-columns:1fr}}
+.sig{display:flex;align-items:flex-start;gap:8px;background:var(--creme);border-radius:10px;padding:10px;font-size:.92rem}.sig .e{font-size:1.3rem;line-height:1;flex:none}
+.proof{font-size:.82rem;color:#5b6b71;background:#F2F5F6;border-radius:10px;padding:8px 12px;margin-top:8px}.proof b{color:var(--verde)}
+.small{font-size:.88rem;color:var(--cinza)}
+.cover{background:linear-gradient(170deg,#0F3D28 0%,#1F6B45 55%,#2A7F55 100%);color:#fff;text-align:center;padding:28px 20px}
+.cover .inner{display:flex;flex-direction:column;gap:10px}.cover .logo{width:min(260px,80%);margin:0 auto 8px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.cover .kicker{font-size:.8rem;letter-spacing:2px;text-transform:uppercase;opacity:.85}.cover h1{color:#fff;font-size:2.3rem;margin:4px 0}.cover .sub{font-size:1.05rem;opacity:.95}
+.cover .alert{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);border-radius:14px;padding:14px 16px;margin-top:10px}.cover .alert .q{font-weight:800;text-transform:uppercase;color:#FFD9D4}.cover .alert p{margin:6px 0 0;font-size:.95rem}
+.cover .who{font-size:.8rem;opacity:.8;margin-top:8px}
+.frame{display:flex;gap:14px;align-items:flex-start}.frame img{width:130px;border-radius:10px;border:2px solid var(--vermelho);flex:none}@media(max-width:480px){.frame{flex-direction:column;align-items:center}.frame img{width:60%}}
+.final{background:linear-gradient(170deg,#0F3D28,#1F6B45);color:#fff}.final h2,.final h3{color:#fff}.final .contact{background:rgba(255,255,255,.96)}.final .small{color:rgba(255,255,255,.85)}
+.qrbox{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);border-radius:14px;padding:12px}.qrbox img{width:96px;height:96px;background:#fff;padding:5px;border-radius:8px}.qrbox p{margin:0;font-size:.92rem}
+.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:14px 0 4px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:13px 18px;font-weight:700;text-decoration:none;font-size:1rem}
+.btn.pdf{background:#fff;color:var(--verde)}.btn.wa{background:#25D366;color:#073b1a}.btn.share{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.sticky{position:sticky;bottom:0;background:var(--verde-esc);color:#fff;padding:10px 12px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;border-radius:14px 14px 0 0;margin-top:20px}
+.sticky a{color:#fff;font-weight:700;text-decoration:none;font-size:.95rem}
+footer{text-align:center;margin:20px 0 10px;color:#6b7a80;font-size:.8rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<!-- ============ PÁGINA 1 — CAPA ============ -->
+<section class="sec cover">
+  <div class="inner">
+    <img class="logo" src="img/logo_card.jpg" alt="Juliano Garbuggio — Direito Bancário & Revisão de Empréstimos">
+    <div class="kicker">Cartilha de prevenção para clientes</div>
+    <h1>GOLPE DO<br>FALSO ADVOGADO</h1>
+    <div class="sub">Como se proteger de perfis falsos, ligações, áudios e vídeos que imitam o escritório — antes de qualquer pagamento.</div>
+    <div class="alert">
+      <div class="q">Na dúvida, não pague. Interrompa o contato e confirme diretamente com o escritório.</div>
+      <p>Guarde esta cartilha no celular e consulte-a antes de fazer qualquer transferência.</p>
+    </div>
+    <div class="actions">
+  <a class="btn pdf" href="Cartilha_Golpe_Falso_Advogado.pdf" download>📄 Baixar a cartilha em PDF</a>
+  <a class="btn wa" href="https://wa.me/5511956759223?text=Ol%C3%A1%2C%20Dr.%20Juliano.%20Recebi%20um%20contato%20suspeito%20e%20quero%20confirmar." target="_blank" rel="noopener">💬 Falar com o escritório</a>
+  <a class="btn share" href="https://wa.me/?text=Cartilha%20gratuita%20do%20Dr.%20Juliano%20Garbuggio%3A%20como%20se%20proteger%20do%20golpe%20do%20falso%20advogado%20%E2%80%94%20https%3A%2F%2Fformulario.julianogarbuggio.adv.br%2Fcartilha%2F" target="_blank" rel="noopener">↗ Compartilhar</a>
+</div>
+    <div class="who">Escritório Juliano Garbuggio — Direito Bancário e Revisão de Empréstimos<br>Edição 1 · Outubro de 2026</div>
+  </div>
+</section>
+
+<!-- ============ PÁGINA 2 — CONTATOS OFICIAIS ============ -->
+<section class="sec">
+  <span class="tag">Guarde e confira</span>
+  <h2>Os únicos canais oficiais do escritório</h2>
+  <p>Salve estes contatos no seu celular com o nome <b>“Dr. Juliano — OFICIAL”</b>. Qualquer outro número, e-mail ou perfil que se apresente como o escritório deve ser tratado como suspeito.</p>
+
+  <div class="contact"><div class="ic">💬</div><div><div class="lbl">WhatsApp profissional do escritório</div><div class="val">(11) 95675-9223</div><div class="sub">Canal principal de atendimento aos clientes</div></div></div>
+  <div class="contact"><div class="ic">📱</div><div><div class="lbl">WhatsApp pessoal do advogado</div><div class="val">(44) 99986-9223</div><div class="sub">Usado somente se o canal profissional estiver instável</div></div></div>
+  <div class="contact"><div class="ic">✉️</div><div><div class="lbl">E-mail oficial</div><div class="val small">juliano@garbuggio.com.br</div></div></div>
+  <div class="contact"><div class="ic">🌐</div><div><div class="lbl">Site institucional</div><div class="val small">julianogarbuggio.adv.br</div></div></div>
+
+  <div class="box red">
+    <div class="quote">Atenção: ver o número oficial na tela da ligação NÃO garante que é o escritório falando.</div>
+    <p>Criminosos conseguem fazer uma ligação <b>parecer</b> vinda do número oficial. Por isso a regra é sempre a mesma: <b>desligue, não responda, e inicie você mesmo um novo contato</b> pelo número salvo — nunca pelo botão “retornar chamada”, por link recebido ou por número informado na própria mensagem.</p>
+  </div>
+  <p class="small">O escritório não usa “novos números”, “central de alvarás”, “setor financeiro” nem assistentes com telefone próprio para tratar de pagamentos. Golpistas já usaram números muito parecidos com o oficial — confira dígito por dígito.</p>
+  </section>
+
+<!-- ============ PÁGINA 3 — WHATSAPP FALSO ============ -->
+<section class="sec">
+  <span class="tag red">Golpe 1 — Já aconteceu com clientes</span>
+  <h2>Perfil falso no WhatsApp</h2>
+  <p>O golpista cria um WhatsApp com o <b>nome completo do advogado, a foto verdadeira, o logotipo e a descrição do escritório</b>. Ele sabe o nome do banco processado, cita o número do processo e fala do “andamento”. Tudo isso pode ser copiado de redes sociais, sites e consultas públicas. <b>Saber os dados do seu caso não prova que a pessoa é do escritório.</b></p>
+
+  <div class="chat">
+    <span class="fake">EXEMPLO SIMULADO</span>
+    <div class="hdr">+55 11 9XXXX-XXXX · “Dr. Juliano Garbuggio” (número desconhecido)</div>
+    <div class="msg">Boa tarde, Sra. Maria! Aqui é o Dr. Juliano. Tenho ótimas notícias sobre o seu processo contra o banco. <span class="t">14:11</span></div>
+    <div class="msg">A revisão do seu consignado foi julgada e o juiz liberou o alvará de R$ 17.620,66 em seu favor. <span class="t">14:12</span></div>
+    <div class="msg">Para liberar o valor hoje, preciso dos seus dados bancários e do pagamento da taxa judicial de R$ 480,00 via Pix. <span class="t">14:13</span></div>
+    <div class="msg me">Vou desligar e ligar para o número oficial do escritório para confirmar. <span class="t">14:14 ✓✓</span></div>
+  </div>
+
+  <div class="box amber">
+    <p><b>O que denuncia o golpe:</b> número diferente do oficial (“é meu novo telefone”), urgência, “boas notícias” inesperadas, pedido de dados bancários, de Pix ou de código. Alguns enviam até um PDF chamado “SENTENÇA” com o nome do cliente — o documento é falso.</p>
+  </div>
+  <div class="quote">A foto pode ser verdadeira. O advogado, não.</div>
+  <div class="proof"><b>Documentado pelo escritório:</b> em outubro de 2026 foram registrados boletins de ocorrência contra pelo menos nove números diferentes que usavam nome, foto e logotipo do escritório para abordar clientes, inclusive um número quase idêntico ao oficial.</div>
+  </section>
+
+<!-- ============ PÁGINA 4 — SPOOFING TELEFÔNICO E DE E-MAIL ============ -->
+<section class="sec">
+  <span class="tag red">Golpe 2 — Já aconteceu</span>
+  <h2>Ligação que mostra o número verdadeiro do escritório</h2>
+
+  <h3>📞 O número na tela pode ser falsificado</h3>
+  <p>Existe uma técnica que faz a ligação <b>aparecer no seu celular como se viesse do (11) 95675-9223</b>, mesmo partindo de outro lugar. Isso não significa que o telefone do escritório foi invadido ou clonado — apenas que a identificação da chamada foi manipulada.</p>
+  <div class="box blue"><p><b>O que fazer:</b> se a ligação pedir pagamento, dados ou código, <b>desligue</b>. Depois, ligue você mesmo para o número salvo. Não use “retornar chamada”.</p></div>
+  <div class="quote">O número que aparece na sua tela pode ser falsificado.</div>
+  <div class="proof"><b>Documentado:</b> em abril de 2025 golpistas fizeram ligações exibindo o número oficial do escritório (BO nº 0000817591/2025 e reclamação ao PROCON contra a operadora).</div>
+
+  <h3 style="margin-top:3mm">📹 Ligações e videochamadas para “conectar o aparelho”</h3>
+  <p>Outra abordagem já usada contra clientes: o golpista liga ou faz videochamada, muitas vezes com <b>voz imitada</b>, e pede para a pessoa <b>ler um código recebido por SMS</b>, <b>apontar a câmera para um QR Code</b> ou “confirmar o aparelho”. Quem faz isso entrega o próprio WhatsApp ao criminoso, que passa a falar com familiares e contatos em nome da vítima.</p>
+  <div class="box blue"><p><b>O que fazer:</b> nunca leia códigos nem escaneie QR Code a pedido de quem ligou. O escritório jamais pede isso. Em caso de dúvida, desligue e confira em “Dispositivos conectados” no WhatsApp se há aparelho desconhecido.</p></div>
+  <div class="proof"><b>Documentado:</b> ligações fraudulentas e videochamadas destinadas ao pareamento indevido de aparelhos constam dos autos dos processos do escritório contra a plataforma e do BO nº GX9146-1/2026.</div>
+  </section>
+
+<!-- ============ PÁGINA 5 — ÁUDIO E VÍDEO ============ -->
+<section class="sec">
+  <span class="tag red">Golpes 3 e 4 — Já aconteceu com clientes</span>
+  <h2>Áudios e vídeos com a voz e a imagem do advogado</h2>
+  <p>Programas de inteligência artificial conseguem <b>imitar a voz</b> de uma pessoa e <b>montar vídeos</b> com o rosto dela (os chamados <i>deepfakes</i>). Golpistas também reaproveitam vídeos verdadeiros, gravados em outra ocasião, para enganar.</p>
+
+  <div class="frame">
+    <img src="img/frame_wm.jpg" alt="Quadro de vídeo usado por golpista, com marca d'água de conteúdo falso">
+    <div>
+      <p class="small"><b>Caso real:</b> em 20/10/2026 um número desconhecido enviou a clientes um vídeo com a imagem do advogado anunciando que “determinada ação havia sido ganha”, para em seguida pedir valores. O fato foi registrado em boletim de ocorrência (nº PW0176-1/2026).</p>
+      <p class="small"><b>Em maio de 2026</b>, criminosos usaram <b>voz clonada</b> em mensagens de áudio para convencer clientes a “parear” o celular — o que entrega o WhatsApp da vítima ao golpista (BO nº GX9146-1/2026).</p>
+    </div>
+  </div>
+
+  <div class="box red">
+    <div class="quote">Áudios e vídeos também podem ser manipulados.</div>
+    <p>Reconhecer a voz ou o rosto <b>não é mais suficiente</b> para saber quem enviou a mensagem.</p>
+  </div>
+  <h3>Como confirmar sem risco</h3>
+  <ul>
+    <li>Não responda ao áudio nem ao vídeo. Chame você para o número oficial salvo.</li>
+    <li>Nunca aceite videochamada ou ligação que peça para <b>ler um código, apontar a câmera para um QR Code ou “conectar aparelho”</b>. O escritório jamais pede isso.</li>
+    <li>Nenhum valor é liberado por áudio ou vídeo. Decisões judiciais existem por escrito, no processo, e o escritório as mostra pelo canal oficial.</li>
+  </ul>
+  </section>
+
+<!-- ============ PÁGINA 6 — FALSO ALVARÁ / FALSO FUNCIONÁRIO ============ -->
+<section class="sec">
+  <span class="tag red">Golpes 5 e 6 — Já aconteceu com clientes</span>
+  <h2>Falso alvará, falsa indenização e falso funcionário</h2>
+  <p>É a forma mais comum de abordagem contra quem tem ação contra banco. A mensagem diz que:</p>
+  <div class="grid2">
+    <div class="sig"><span class="e">🏆</span>“Você ganhou a ação contra o banco.”</div>
+    <div class="sig"><span class="e">💰</span>“O juiz liberou um alvará / indenização por danos morais.”</div>
+    <div class="sig"><span class="e">🔁</span>“O banco vai devolver os descontos / há acordo a receber.”</div>
+    <div class="sig"><span class="e">🔒</span>“Há um valor bloqueado aguardando liberação.”</div>
+    <div class="sig"><span class="e">🧾</span>“Pague imposto, taxa, custas ou depósito para receber.”</div>
+    <div class="sig"><span class="e">🏦</span>“Informe agência, conta e senha para o depósito.”</div>
+  </div>
+  <div class="box red" style="margin-top:2.6mm">
+    <div class="quote">O escritório não solicita Pix ou depósito para liberar alvarás, indenizações ou valores judiciais.</div>
+    <p>Quando existe alguma despesa real no processo, ela é explicada pelo advogado, com documento verificável, pelo canal oficial — <b>nunca por um pedido inesperado de transferência para conta informada por WhatsApp</b>.</p>
+  </div>
+  <div class="quote">Não pague taxas antecipadas para receber alvarás ou indenizações.</div>
+  <h3>“Sou da equipe do Dr. Juliano…”</h3>
+  <p>Golpistas também se apresentam como <b>secretária, assistente jurídico, setor financeiro, setor de alvarás ou “central de atendimento”</b>. Nenhum número extra é autorizado só porque conhece o seu processo ou usa o logotipo do escritório. <b>Assuntos de dinheiro são tratados apenas pelos canais oficiais.</b></p>
+  <div class="proof"><b>Documentado:</b> número apresentando-se como funcionário do escritório (BO QI9505-1/2026) e envio de falsa “sentença” em PDF seguida de pedido de dados bancários (outubro/2026).</div>
+  </section>
+
+<!-- ============ PÁGINA 7 — CONSIGNADOS ============ -->
+<section class="sec">
+  <span class="tag">Orientação específica</span>
+  <h2>Para quem tem empréstimo consignado, RMC ou RCC</h2>
+  <p>Aposentados, pensionistas, servidores, trabalhadores — e os familiares que ajudam a cuidar das contas — são os alvos preferidos. O golpista pode citar, corretamente:</p>
+  <div class="grid2">
+    <div class="sig"><span class="e">🏦</span>o nome do banco e o número do contrato</div>
+    <div class="sig"><span class="e">⚖️</span>o número do processo e a existência da ação revisional</div>
+    <div class="sig"><span class="e">📉</span>o valor da parcela e os descontos no benefício ou na folha</div>
+    <div class="sig"><span class="e">📄</span>“restituição”, “suspensão dos descontos” ou “processo encerrado”</div>
+  </div>
+  <div class="box amber" style="margin-top:2.6mm">
+    <p>Parte dessas informações pode ter sido obtida de documentos, de fontes públicas ou de conversas anteriores. <b>Conhecer o seu caso não comprova que a pessoa é do escritório.</b></p>
+  </div>
+  <h3>O que o escritório NÃO pede em contato inesperado</h3>
+  <ul>
+    <li>Transferência antecipada para liberar crédito judicial.</li>
+    <li>Código de autenticação recebido por SMS ou WhatsApp.</li>
+    <li>Senha do banco, senha do <b>gov.br</b> ou acesso a aplicativos financeiros.</li>
+    <li>Instalação de programa de “acesso remoto” ou “suporte” no celular.</li>
+    <li>Contratação de novo empréstimo para “receber” valores do processo.</li>
+    <li>Pagamento a terceiros apresentados como servidor do fórum, contador, gerente ou cartório.</li>
+    <li>Segredo em relação à família ou pressa para “não perder o prazo”.</li>
+  </ul>
+  <p class="small">Se houver necessidade legítima de documento, despesa ou providência, o escritório confirma pelo canal oficial — e você pode sempre ligar para conferir.</p>
+  </section>
+
+<!-- ============ PÁGINA 8 — SINAIS E PROTOCOLO ============ -->
+<section class="sec">
+  <span class="tag green">Protocolo de conferência</span>
+  <h2>Recebeu mensagem, ligação, áudio ou vídeo suspeito? Siga estes passos.</h2>
+  <ol class="steps">
+    <li><b>Não pague e não informe dados</b> enquanto houver qualquer dúvida.</li>
+    <li><b>Não clique em links</b>, não abra anexos e não instale aplicativos indicados pelo contato.</li>
+    <li><b>Encerre a ligação</b> ou pare de responder à conversa.</li>
+    <li><b>Abra você mesmo uma nova conversa</b> com o número oficial já salvo: <b>(11) 95675-9223</b>.</li>
+    <li><b>Pergunte ao escritório</b> se existe o alvará, acordo, indenização ou pedido de documento mencionado.</li>
+    <li><b>Guarde as provas</b>: prints, número suspeito, áudios, vídeos, e-mails, links e comprovantes.</li>
+    <li><b>Avise o escritório</b> sobre a tentativa de golpe — isso protege outros clientes.</li>
+  </ol>
+  <div class="box blue">
+    <p><b>Denunciar e bloquear:</b> faça isso <b>depois</b> de salvar as provas (prints da conversa e do perfil, com o número visível). Depois de bloqueado, o conteúdo pode ficar inacessível.</p>
+  </div>
+  <h3>Sinais de alerta — qualquer um deles basta</h3>
+  <div class="grid2">
+    <div class="sig"><span class="e">⏱️</span>Urgência: “é só hoje”, “vai perder o prazo”</div>
+    <div class="sig"><span class="e">🎁</span>Boa notícia inesperada sobre dinheiro</div>
+    <div class="sig"><span class="e">📲</span>Número “novo” ou diferente do oficial</div>
+    <div class="sig"><span class="e">🔑</span>Pedido de código, senha ou pareamento</div>
+    <div class="sig"><span class="e">💸</span>Taxa, imposto ou custas para “liberar”</div>
+    <div class="sig"><span class="e">🤫</span>Pedido de sigilo ou de não avisar a família</div>
+  </div>
+  </section>
+
+<!-- ============ PÁGINA 9 — JÁ PAGOU ============ -->
+<section class="sec">
+  <span class="tag red">Emergência</span>
+  <h2>Já transferiu dinheiro ou informou dados? Aja agora.</h2>
+  <ol class="steps red">
+    <li><b>Procure imediatamente o seu banco</b> ou a instituição de pagamento pelo aplicativo ou pela central oficial (número impresso no cartão).</li>
+    <li><b>Se foi Pix</b>, peça ao banco a análise do caso e o acionamento do <b>MED — Mecanismo Especial de Devolução</b>. Quanto mais rápido, maior a chance de bloqueio do valor na conta do golpista.</li>
+    <li><b>Registre boletim de ocorrência</b> — pode ser feito pela internet, na delegacia eletrônica do seu Estado.</li>
+    <li><b>Guarde tudo</b>: comprovante da transferência, nome e chave do beneficiário, conversas, áudios, vídeos e e-mails.</li>
+    <li><b>Avise o escritório</b> pelos contatos oficiais.</li>
+    <li><b>Troque as senhas</b> do banco, do e-mail e do gov.br se tiver informado dados; se instalou algum aplicativo indicado pelo golpista, desinstale-o e peça ajuda ao suporte do banco.</li>
+    <li><b>Confira o WhatsApp</b>: em “Dispositivos conectados”, desconecte qualquer aparelho que você não reconheça.</li>
+  </ol>
+  <div class="box amber">
+    <p><b>Seja realista:</b> a devolução do valor depende das circunstâncias e dos mecanismos disponíveis em cada caso. Nem sempre é possível recuperar tudo — por isso a prevenção é o passo mais importante.</p>
+  </div>
+  <div class="quote blue">Na dúvida, não pague. Interrompa o contato e confirme diretamente com o escritório.</div>
+  </section>
+
+<!-- ============ PÁGINA 10 — FINAL ============ -->
+<section class="sec final">
+  <span class="tag" style="background:rgba(255,255,255,.18)">Mensagem do escritório</span>
+  <h2>Nós nunca vamos pedir dinheiro para liberar o que é seu.</h2>
+  <p style="opacity:.95">Os golpistas usam o nosso nome, a nossa foto e a nossa marca porque sabem que você confia no escritório. A melhor defesa é simples: <b>um pedido de pagamento, de senha ou de código só vale se você mesmo chamar o número oficial e ouvir a confirmação.</b> Fazer essa conferência nunca incomoda — ao contrário, ajuda a proteger todos os clientes.</p>
+  <p style="opacity:.95">Se tiver qualquer dúvida, fale conosco. Preferimos dez ligações de conferência a um único cliente lesado.</p>
+
+  <h3>Canais oficiais</h3>
+  <div class="contact"><div class="ic">💬</div><div><div class="lbl">WhatsApp profissional</div><div class="val">(11) 95675-9223</div></div></div>
+  <div class="contact"><div class="ic">📱</div><div><div class="lbl">WhatsApp pessoal (se o profissional estiver instável)</div><div class="val">(44) 99986-9223</div></div></div>
+  <div class="contact"><div class="ic">✉️</div><div><div class="lbl">E-mail</div><div class="val small">juliano@garbuggio.com.br</div></div></div>
+
+  <div class="qrbox" style="margin-top:2.5mm">
+    <img src="img/qr.png" alt="QR Code do site julianogarbuggio.adv.br">
+    <p><b>Site institucional</b><br>julianogarbuggio.adv.br<br><span style="opacity:.85;font-size:7.8pt">Aponte a câmera do celular para o código. Confira sempre o endereço na barra do navegador.</span></p>
+  </div>
+  <p class="small" style="color:rgba(255,255,255,.8);margin-top:3mm">Este material é informativo e pode ser compartilhado livremente com familiares. Não contém dados de clientes. Os exemplos de conversa são simulados; os casos citados como documentados constam de boletins de ocorrência registrados pelo escritório em 2026.</p>
+  </section>
+
+
+<div class="sticky"><a href="https://wa.me/5511956759223" target="_blank" rel="noopener">💬 WhatsApp oficial: (11) 95675-9223</a><a href="Cartilha_Golpe_Falso_Advogado.pdf" download>📄 PDF</a></div>
+<footer>Juliano Garbuggio Sociedade Individual de Advocacia · OAB/SP 505.598 · OAB/PR 47.565 · OAB/MG 234.362 · Av. Paulista, 1636, sala 1105 — São Paulo/SP<br>Edição 1 · Outubro de 2026 · Material informativo, livre para compartilhar com familiares.</footer>
+</div>
+</body>
+</html>
